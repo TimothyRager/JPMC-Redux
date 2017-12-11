@@ -7,6 +7,8 @@ public class Main {
         String n;
         System.out.println("Welcome to the JPMC Redux.");
         System.out.println("Problem: Given an integer n, where 0<n<1 billion, print n's textual representation");
+        System.out.println("This has been solved. Now for 0<n<1 trillion");
+        System.out.println("This can continually scale as long as we add values to PlaceValues Enum");
         do{
             System.out.print("Enter n: ");
             n=in.nextLine();
@@ -58,7 +60,7 @@ public class Main {
         }
     }
     enum PlaceValues{
-        Thousand(4,5,6), Million(7,8,9);
+        Thousand(4,5,6), Million(7,8,9), Trillion(10,11,12);
 
         int[] sigDigits;
 
